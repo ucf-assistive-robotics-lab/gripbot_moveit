@@ -1,0 +1,70 @@
+# MoveIt-specific simulation settings
+moveit_sim_hw_interface:
+  joint_model_group: controllers_initial_group_
+  joint_model_group_pose: controllers_initial_pose_
+# Settings for ros_control control loop
+generic_hw_control_loop:
+  loop_hz: 300
+  cycle_time_error_threshold: 0.01
+# Settings for ros_control hardware interface
+hardware_interface:
+  joints:
+    - base_column_link
+    - girdle_visual_link
+    - arm_visual_link
+    - forearm_visual_link
+    - base_wrist_link
+    - finger_1_base_link
+    - finger_1_proximal_link
+    - finger_1_mid_link
+    - finger_1_distal_link
+    - finger_2_base_link
+    - finger_2_proximal_link
+    - finger_2_mid_link
+    - finger_2_distal_link
+    - finger_3_proximal_link
+    - finger_3_mid_link
+    - finger_3_distal_link
+  sim_control_mode: 1  # 0: position, 1: velocity
+# Publish all joint states
+# Creates the /joint_states topic necessary in ROS
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+controller_list:
+  - name: planning_group_arm_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - base_column_link
+      - girdle_visual_link
+      - arm_visual_link
+      - forearm_visual_link
+      - base_wrist_link
+  - name: planning_group_finger_1_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - finger_1_base_link
+      - finger_1_proximal_link
+      - finger_1_mid_link
+      - finger_1_distal_link
+  - name: planning_group_finger_2_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - finger_2_base_link
+      - finger_2_proximal_link
+      - finger_2_mid_link
+      - finger_2_distal_link
+  - name: planning_group_finger_3_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - finger_3_proximal_link
+      - finger_3_mid_link
+      - finger_3_distal_link

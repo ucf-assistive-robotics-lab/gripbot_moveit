@@ -1,0 +1,84 @@
+# joint_limits.yaml allows the dynamics properties specified in the URDF to be overwritten or augmented as needed
+# Specific joint properties can be changed with the keys [max_position, min_position, max_velocity, max_acceleration]
+# Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
+joint_limits:
+  arm_visual_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  base_column_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  base_wrist_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_1_base_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_1_distal_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_1_mid_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_1_proximal_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_2_base_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_2_distal_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_2_mid_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_2_proximal_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_3_distal_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_3_mid_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_3_proximal_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  forearm_visual_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0
+  girdle_visual_link:
+    has_velocity_limits: true
+    max_velocity: 1
+    has_acceleration_limits: false
+    max_acceleration: 0

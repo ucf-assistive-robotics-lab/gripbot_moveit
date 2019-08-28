@@ -1,0 +1,25 @@
+controller_list:
+  - name: fake_planning_group_arm_controller
+    joints:
+      - base_column_link
+      - girdle_visual_link
+      - arm_visual_link
+      - forearm_visual_link
+      - base_wrist_link
+  - name: fake_planning_group_finger_1_controller
+    joints:
+      - finger_1_base_link
+      - finger_1_proximal_link
+      - finger_1_mid_link
+      - finger_1_distal_link
+  - name: fake_planning_group_finger_2_controller
+    joints:
+      - finger_2_base_link
+      - finger_2_proximal_link
+      - finger_2_mid_link
+      - finger_2_distal_link
+  - name: fake_planning_group_finger_3_controller
+    joints:
+      - finger_3_proximal_link
+      - finger_3_mid_link
+      - finger_3_distal_link

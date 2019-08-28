@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: gripbot_description
+    relative_path: urdf/gripbot_2.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/gripbot.srdf
+  CONFIG:
+    author_name: Yannick Roberts
+    author_email: contact@yannickroberts.com
+    generated_timestamp: 1567003341
