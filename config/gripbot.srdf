@@ -22,10 +22,10 @@
         <chain base_link="base_wrist_link" tip_link="finger_3_distal_link" />
     </group>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="end_effector_arm" parent_link="base_wrist_link" group="planning_group_arm" parent_group="planning_group_arm" />
-    <end_effector name="end_effector_finger_1" parent_link="finger_1_distal_link" group="planning_group_finger_1" parent_group="planning_group_finger_1" />
-    <end_effector name="end_effector_finger_2" parent_link="finger_2_distal_link" group="planning_group_finger_2" parent_group="planning_group_finger_2" />
-    <end_effector name="end_effector_finger_3" parent_link="finger_3_distal_link" group="planning_group_finger_3" parent_group="planning_group_finger_3" />
+    <end_effector name="end_effector_arm" parent_link="base_wrist_link" group="planning_group_arm" />
+    <end_effector name="end_effector_finger_1" parent_link="finger_1_distal_link" group="planning_group_finger_1" />
+    <end_effector name="end_effector_finger_2" parent_link="finger_2_distal_link" group="planning_group_finger_2" />
+    <end_effector name="end_effector_finger_3" parent_link="finger_3_distal_link" group="planning_group_finger_3" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="dummy_link" type="fixed" parent_frame="frame_base" child_link="base_mount_link" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->

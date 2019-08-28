@@ -32,7 +32,7 @@ joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
 controller_list:
-  - name: planning_group_arm_controller
+  - name: gripbot/planning_group_arm_controller
     action_ns: follow_joint_trajectory
     default: True
     type: FollowJointTrajectory
@@ -42,7 +42,7 @@ controller_list:
       - arm_visual_link
       - forearm_visual_link
       - base_wrist_link
-  - name: planning_group_finger_1_controller
+  - name: gripbot/planning_group_finger_1_controller
     action_ns: follow_joint_trajectory
     default: True
     type: FollowJointTrajectory
@@ -51,7 +51,7 @@ controller_list:
       - finger_1_proximal_link
       - finger_1_mid_link
       - finger_1_distal_link
-  - name: planning_group_finger_2_controller
+  - name: gripbot/planning_group_finger_2_controller
     action_ns: follow_joint_trajectory
     default: True
     type: FollowJointTrajectory
@@ -60,7 +60,7 @@ controller_list:
       - finger_2_proximal_link
       - finger_2_mid_link
       - finger_2_distal_link
-  - name: planning_group_finger_3_controller
+  - name: gripbot/planning_group_finger_3_controller
     action_ns: follow_joint_trajectory
     default: True
     type: FollowJointTrajectory
